@@ -7,7 +7,7 @@ export default function Home() {
     {name:"Physik", icon:""},
     {name:"Chemie", icon:""},
     {name:"Informatik", icon:""},
-
+    {name:"test", icon:""},
   ]
   
   const subjectBoxes = [];
