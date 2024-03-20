@@ -3,32 +3,31 @@ import Image from "next/image";
 export default function Home() {
 
   const subjects = [
-    {name:"Mathematik", icon:""},
-    {name:"Physik", icon:""},
-    {name:"Chemie", icon:""},
-    {name:"Informatik", icon:""},
-    {name:"test", icon:""},
+    {name:"Mathematik",href:"/subjects/mathematics", icon:""},
+    {name:"Physik",href:"", icon:""},
+    {name:"Chemie",href:"", icon:""},
+    {name:"Informatik",href:"", icon:""},
   ]
   
   const subjectBoxes = [];
   for(let i=0;i<subjects.length;i++){
     subjectBoxes[i] = (
 
-    <button className=" flex items-center justify-center p-5 w-44 h-24 rounded-xl border shadow-md">
-      <p>{subjects[i].name}</p>
-    </button>
-    
+          <a href={subjects[i].href} className=" p-5 w-44 h-24 rounded-xl border shadow-md">
+            <p>{subjects[i].name}</p>
+          </a>
+
+
     );
   }
 
 
   return (
-    <div className=" h-screen flex justify-center items-center ">
-      <div className=" flex flex-row gap-44">
+    <div className="min-h-screen flex justify-center items-center">
+      <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-32">
         {subjectBoxes}
-      </div>
-
-    </div>
+      </div> 
+    </div> 
       
   );
 }
