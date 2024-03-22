@@ -2,7 +2,10 @@
 
 export default function Johan(){
     return(
-        <p>Johan</p>
-
+        <main>
+    
+        <h1>mathedingens</h1>
+        
+        </main>
     )
 }
