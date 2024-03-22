@@ -23,11 +23,13 @@ export default function Home() {
 
 
   return (
+    <>
+    <h1>Formelsammlung</h1>
     <div className="min-h-screen flex justify-center items-center">
       <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-32">
         {subjectBoxes}
       </div> 
     </div> 
-      
+    </>
   );
 }
