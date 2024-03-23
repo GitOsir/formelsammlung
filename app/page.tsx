@@ -1,13 +1,8 @@
 import Image from "next/image";
+import {subjects} from "@/app/data/subjects"
 
 export default function Home() {
 
-  const subjects = [
-    {name:"Mathematik",href:"/subjects/mathematics", icon:""},
-    {name:"Physik",href:"", icon:""},
-    {name:"Chemie",href:"", icon:""},
-    {name:"Informatik",href:"", icon:""},
-  ]
   
   const subjectBoxes = [];
   for(let i=0;i<subjects.length;i++){
@@ -24,6 +19,7 @@ export default function Home() {
 
   return (
     <>
+
     <h1>Formelsammlung</h1>
     <div className="min-h-screen flex justify-center items-center">
       <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-32">
