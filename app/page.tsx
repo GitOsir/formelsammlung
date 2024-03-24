@@ -7,12 +7,9 @@ export default function Home() {
   const subjectBoxes = [];
   for(let i=0;i<subjects.length;i++){
     subjectBoxes[i] = (
-
           <a href={subjects[i].href} className=" p-5 w-44 h-24 rounded-xl border shadow-md">
             <p>{subjects[i].name}</p>
           </a>
-
-
     );
   }
 
