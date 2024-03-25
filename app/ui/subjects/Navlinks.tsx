@@ -12,14 +12,14 @@ export default function Navlinks(){
         <div className="flex flex-row gap-6">
             
             {subjects.map((subject)=>(
-            <Link href={subject.href} className={clsx(
+            <a href={subject.href} className={clsx(
                 'flex justify-center items-center bg-white w-28 h-9 rounded-md font-normal',
                 {
                     'bg-slate-400 font-extrabold text-white':pathname === subject.href,
                 },
                 )}>
                 <p className="font-normal">{subject.name}</p>
-            </Link>
+            </a>
             ))}
 
         </div>
