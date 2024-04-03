@@ -13,9 +13,10 @@ export default function Navlinks(){
             
             {subjects.map((subject)=>(
             <a href={subject.href} className={clsx(
-                'flex justify-center items-center bg-white w-28 h-9 rounded-md font-normal',
+                'flex justify-center items-center px-3 h-9 rounded-md',
                 {
-                    'bg-slate-400 font-extrabold text-white':pathname === subject.href,
+                    'bg-gray-500 font-normal text-white/75':pathname !== subject.href,
+                    [`${subject.color}  font-extrabold text-white`]:pathname === subject.href,
                 },
                 )}>
                 <p className="font-normal">{subject.name}</p>
