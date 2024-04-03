@@ -2,7 +2,7 @@ import { Archivo_Narrow } from "next/font/google"
 
 
 
-export default function Dominik(){
+export default function Vektoren(){
 
 
     const vector_variable = "$$ y = \\begin{bmatrix} x \\cr y \\cr z \\end{bmatrix} \\longrightarrow \\begin{bmatrix} 1 \\cr 2 \\cr 3 \\end{bmatrix}$$"
