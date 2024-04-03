@@ -1,7 +1,7 @@
 
 
 
-export default function Dominik(){
+export default function Vektoren(){
 
 
     const formular = "$$\\sum_{i=0}^n i^2 = \\frac{(n^2+n)(2n+1)}{6}$$"
