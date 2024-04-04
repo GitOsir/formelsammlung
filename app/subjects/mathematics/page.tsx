@@ -18,7 +18,7 @@ export default function mathematics(){
                 <Card contents={
                     <>
                         <h1 className="text-center font-bold">Pythagoras</h1>
-                        <p className="font-mono">mit dem Satz des Pythagoras lassen sich die Seitenlängen eines rechtwinkligen Dreicecks berechnen.</p>
+                        <p className="font-normal">mit dem Satz des Pythagoras lassen sich die Seitenlängen eines rechtwinkligen Dreicecks berechnen.</p>
                         <div className="flex justify-center">
                             <p>{"$$a^2+b^2=c^2$$"}</p>
                         </div>
