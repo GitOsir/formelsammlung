@@ -6,6 +6,7 @@ export default function Vektoren(){
 
 
     const vector_variable = "$$ y = \\begin{bmatrix} x \\cr y \\cr z \\end{bmatrix} \\longrightarrow \\begin{bmatrix} 1 \\cr 2 \\cr 3 \\end{bmatrix}$$"
+    const vector_n = "$$ \\vec{n}$$"
 
     return(
         <>
@@ -29,15 +30,15 @@ export default function Vektoren(){
                     }/>
                     <Card contents={
                         <>
-                            <h1 className="text-center font-bold">Betrag (Norm) eines Vektors</h1>
-                            <p>Gibt die Länge eines Vekotrs an</p>
+                            <h1 className="text-center font-bold">Skarlarprodukt</h1>
+                            <p>Damit wird geprüft, ob zwei Vektoren senkrecht zueinander stehen.</p>
 
                         </>
                     }/>
                     <Card contents={
                         <>
-                            <h1 className="text-center font-bold">Betrag (Norm) eines Vektors</h1>
-                            <p>Gibt die Länge eines Vekotrs an</p>
+                            <h1 className="text-center font-bold">Vektorkreuzprodukt</h1>
+                            <p>Bildet den senkrechten Vektor ({vector_n}), an dem die beiden ausgehenden Vektoren senkrecht zueinander stehen. </p>
 
                         </>
                     }/>
