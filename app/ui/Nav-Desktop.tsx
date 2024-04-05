@@ -3,7 +3,7 @@ import Navlinks from "./Navlinks"
 
 export const Navbar_Desktop = ()=>{
     return(
-        <div className="flex items-center w-full h-16 sticky top-0">
+        <div id="navbarDesktop" className="flex items-center w-full h-16 sticky top-0">
             <div className="w-full h-full bg-slate-300/25 backdrop-filter backdrop-blur-md shadow-md border-b">
 
                 <div className="mx-5 grid grid-cols-2 h-full">

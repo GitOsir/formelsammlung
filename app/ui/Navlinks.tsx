@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation"
 
 export default function Navlinks(){
     const pathname = usePathname();
-    console.log("pathname: " + pathname);
     return(
         <div className="flex flex-row gap-6">
             
