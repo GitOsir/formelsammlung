@@ -8,16 +8,28 @@ const mathematik:Subject = {
     color:"bg-sky-500/90",
     icon:"",
     topics:[
-        {name:"Funktionen",link:"functions"},
-        {name:"Vektoren",link:"vectors"},
-        {name:"Geometrie",link:"geometry"},
+        {name:"Funktionen",link:"functions",icon:"/subjects/mathematics/topic-icons/function.png",
+        subtopics:[
+            {name:"Funktionstypen",link:"#functionTypes"},
+            {name:"ganzrationale Funktionen",link:"#--"},
+        ]},
+        {name:"Vektoren",link:"vectors",icon:"/subjects/mathematics/topic-icons/vector.png"},
+        {name:"Geometrie",link:"geometry",icon:"/subjects/mathematics/topic-icons/geometry.png"},
     ]
 }
 const physik:Subject = {
     name:"Physik",
     href:"/subjects/physics",
     color:"bg-green-500/70",
-    icon:""
+    icon:"",
+    topics:[
+        {name:"Thermodynamik",link:"#--",icon:"",subtopics:[
+            {name:"wärme",link:"#--"},
+            {name:"kälte",link:"#--"},
+            {name:"wärmeübertragung",link:"#--"}
+        ]},
+        {name:"Frequenzen",link:"#--"},
+    ]
 }
 const chemie:Subject = {
     name:"Chemie",

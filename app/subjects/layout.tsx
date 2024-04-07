@@ -5,7 +5,11 @@ import { SideBar } from '../ui/SideBar'
 export default function SubjectsLayout({children,}: {children: React.ReactNode}) {
   return (
     <>
-        <Script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" />
+
+          <Script src="mathjax_config.js" defer></Script>
+          <Script type="text/javascript" id="MathJax-script" defer
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+          </Script>
 
 
           <Navbar/>
