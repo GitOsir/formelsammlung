@@ -6,7 +6,8 @@ export default function Vektoren(){
 
 
     const vector_variable = "$$ y = \\begin{bmatrix} x \\cr y \\cr z \\end{bmatrix} \\longrightarrow \\begin{bmatrix} 1 \\cr 2 \\cr 3 \\end{bmatrix}$$"
-    const vector_n = "$$ \\vec{n}$$"
+    const vector_n = "$$\\vec{n}$$"
+    const calculator = "$$\Main \\rightarrow \Aktion \\rightarrow \Vektor \\rightarrow \ norm$$"
 
     return(
         <>
@@ -17,14 +18,22 @@ export default function Vektoren(){
                     <Card contents={
                         <>
                             <p>{vector_variable}</p>
-                            <p>Dargestellt ist ein Punkt in einem dreimensionalen Koordinatensystem. Der Punkt hat auf der x-Achse die Koordinate 1, auf der y-Achse die Koordinate 2 und auf der z-Achse die Koordinate 3.</p>
+                            <p>Dargestellt ist ein Ortsvektor in einem dreimensionalen Koordinatensystem. Der Ortsverktor hat auf der <b>x-Achse</b> die Koordinate 1, auf der <b>y-Achse</b> die Koordinate 2 und auf der <b>z-Achse</b> die Koordinate 3.</p>
                         </>
                     }/>
+
+            </section>
+            <h1 className="underline font-bold p-9">Befehle für den Taschenrechner</h1>
+            <section> 
                 <div className="grid lg:grid-cols-3 sm:grid-cols-1">
                     <Card contents={
                         <>
                             <h1 className="text-center font-bold">Betrag (Norm) eines Vektors</h1>
-                            <p>Gibt die Länge eines Vekotrs an</p>
+                            <p>Gibt die Länge eines Vekotrs an.
+                                Im Taschenrechner (CAS): 
+                                <br></br>
+                                {calculator}
+                            </p>
 
                         </>
                     }/>
