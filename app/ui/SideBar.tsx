@@ -41,7 +41,7 @@ export const SideBar = ()=>{
                         </button>
                         {
                             sideBarTopics.map(({link,icon})=>(
-                                <button onClick={()=>scrollTo(link)} className="flex items-center justify-center w-10 h-10 rounded-md bg-slate-400">
+                                <button onClick={()=>scrollTo(link)} className="flex items-center justify-center size-10 hover:shadow-lg rounded-full bg-slate-300 shadow-md">
                                     <Image width={30} height={30} alt="icon" src={icon != null?icon:""}></Image>
                                 </button>
                             ))
