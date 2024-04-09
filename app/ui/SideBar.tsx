@@ -33,7 +33,7 @@ export const SideBar = ()=>{
         {
             sideBarOpen === false ?(
                 /*small sidebar with less information when sideBarOpen == false*/
-                <div className={`flex items-center h-[calc(100vh-4rem)] w-24 sticky top-16`}>
+                <div className={`flex items-center h-[calc(100vh-4rem)] w-[30em] sticky top-16`}>
                 <div className=" flex justify-center pt-4 w-full h-full bg-slate-300/25 backdrop-filter backdrop-blur-md border-r">
                     <div className="flex flex-col gap-4">
                         <button onClick={()=>setSideBarOpen(!sideBarOpen)} className="flex items-center justify-center -rotate-90">
@@ -51,7 +51,7 @@ export const SideBar = ()=>{
             </div>
             ):(
                 /*Wider Sidebar with more Information and Subtopics */
-                <div className={`flex items-center h-[calc(100vh-4rem)] w-80 sticky top-16`}>
+                <div className={`flex items-center h-[calc(100vh-4rem)] w-[2000px] sticky top-16`}>
                     <div className="pt-4 w-full h-full bg-slate-300/25 border-r">
                         <div className="size-96 bg-violet-400/55 rounded-full absolute -z-10 blur-3xl top-2/4 right-3/4"></div>
                         <div className="flex px-3 flex-col gap-3">
@@ -67,10 +67,10 @@ export const SideBar = ()=>{
                                 sideBarTopics.map((topic)=>{
                                     return (
                                     <>
-                                    <div className="flex flex-row justify-between">
-                                        <div className="flex flex-row">
+                                    <div className="flex flex-row justify-between hover:bg-slate-300 rounded-md px-2 py-1">
+                                        <div className="flex flex-row gap-1">
                                             <Image width={30} height={30} alt="icon" src={topic.icon != null?topic.icon:""}></Image>
-                                            <button onClick={()=>scrollTo(topic.link)} className="h-10 p-2 rounded-md hover:bg-slate-300 text-left">{topic.name}</button>
+                                            <button onClick={()=>scrollTo(topic.link)} className="h-10 text-left">{topic.name}</button>
                                         </div>
                                         <div className="flex items-center justify-self-end">
                                             <button onClick={()=>{topic.setOpen(!topic.open)}} className={`flex items-center ${topic.open?"rotate-180":"rotate-0"}`}>
