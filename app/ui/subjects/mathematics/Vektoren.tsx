@@ -1,5 +1,6 @@
 import { Archivo_Narrow } from "next/font/google"
 import Card from "../Card"
+import { Header } from "../../Header"
 
 
 export default function Vektoren(){
@@ -42,13 +43,10 @@ export default function Vektoren(){
     return(
         <>
         <section id="vectors">
-            <p>Dominik ... npm run dev</p>
-            <h1 className="text-center font-bold hover:font-thin">Das ist der erste Test von mir</h1>
-            <h2>Überschrift nummer 2</h2>
 
-            <p className="text-center font-bold">Vektoren</p>
-            <h1 className="underline font-bold p-9">1. Einführung</h1>
-            <section>  
+            <Header title="Vektoren"/>
+            <h2 className="font-bold p-9 text-center text-2xl">Einführung</h2>
+            <section id="vector-introduction">  
                     <Card contents={
                         <>
                             <p className="-z-30">{vector_variable_0A}</p>
@@ -59,7 +57,7 @@ export default function Vektoren(){
                     }/>
 
             </section>
-            <section className="mt-8"> 
+            <section id="vector-length" className="mt-8"> 
                 <div className="grid lg:grid-cols-2 sm:grid-cols-1">
                     <Card contents={
                         <>
@@ -94,7 +92,8 @@ export default function Vektoren(){
                         </>
                     }/>
                 </div>
-
+            </section>
+            <section id="vector-positions">
                 <div className="grid lg:grid-cols-3 sm:grid-cols-1">
                 <Card contents={
                         <>

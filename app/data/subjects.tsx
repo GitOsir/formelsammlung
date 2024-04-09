@@ -10,10 +10,15 @@ const mathematik:Subject = {
     topics:[
         {name:"Funktionen",link:"functions",icon:"/subjects/mathematics/topic-icons/function.png",
         subtopics:[
-            {name:"Funktionstypen",link:"#functionTypes"},
+            {name:"Funktionstypen",link:"functionTypes"},
             {name:"ganzrationale Funktionen",link:"#--"},
         ]},
-        {name:"Vektoren",link:"vectors",icon:"/subjects/mathematics/topic-icons/vector.png"},
+        {name:"Vektoren",link:"vectors",icon:"/subjects/mathematics/topic-icons/vector.png", subtopics:[
+            {name:"Einführung",link:"vector-introduction"},
+            {name:"Längenberechnung", link:"vector-length"},
+            {name:"Lagebeziehungen",link:"vector-positions"}
+
+        ]},
         {name:"Geometrie",link:"geometry",icon:"/subjects/mathematics/topic-icons/geometry.png"},
     ]
 }
