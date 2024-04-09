@@ -1,14 +1,43 @@
+"use client"
+
 import Script from 'next/script'
-import Navbar from '../ui/subjects/Navbar'
- 
+import { Navbar_Desktop } from '../ui/Nav-Desktop'
+import { SideBar } from '../ui/SideBar' 
+import { useMediaQuery } from '../util/useMediaQuery'
+import { Navbar_Mobile } from '../ui/Nav-Mobile';
+import MathJax from "@/app/mathjax-config";
+
 export default function SubjectsLayout({children,}: {children: React.ReactNode}) {
+
+  const isMobile = useMediaQuery(768);
+
   return (
     <>
-        <Script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" />
+          <MathJax />
+          <Script strategy="lazyOnload" src="@/mathjax-config.js" async></Script>
 
 
-        <Navbar/>
-        <section>{children}</section>
+
+
+
+          {
+          isMobile?(
+            <div>
+              <section>{children}</section>
+              <Navbar_Mobile/>
+            </div>
+          ):(
+          <>
+            <Navbar_Desktop/>
+            <div className='flex'>
+              <SideBar/>
+              <section>{children}</section>
+            </div>
+          </>
+          )
+          }
+
+
     </>
   )
 }

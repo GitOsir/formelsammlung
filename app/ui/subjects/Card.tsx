@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react"
+
 
 export default function Card({contents}:{contents?:JSX.Element}){
     return(
