@@ -52,7 +52,7 @@ export const SideBar = ()=>{
             ):(
                 /*Wider Sidebar with more Information and Subtopics */
                 <div className={`flex items-center h-[calc(100vh-4rem)] sticky top-16`}>
-                    <div className="pt-4 w-full h-full bg-slate-300/25 border-r">
+                    <div className="pt-4 w-full h-full bg-slate-300/25 border-r overflow-y-auto">
                         <div className="size-96 bg-violet-400/55 rounded-full absolute -z-10 blur-3xl top-2/4 right-3/4"></div>
                         <div className="flex px-3 flex-col gap-3">
 
